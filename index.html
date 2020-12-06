@@ -79,6 +79,56 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; text-align: justify;">
             <tbody>
 
+              <tr onmouseout="ndg_stop()" onmouseover="ndg_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a target="_blank" href="https://aljazbozic.github.io/neural_deformation_graphs">
+                      <div class="two" id="ndg_image" style="opacity: 0;">
+                        <video width="100%" height="100%" muted="" autoplay="" loop="">
+                          <source src="main_page/images/bozic2021ndg.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="main_page/images/bozic2021ndg_before.jpg" width="160">
+                    </a>
+                  </div>
+
+                  <script type="text/javascript">
+                    function ndg_start() {
+                      document.getElementById('ndg_image').style.opacity = 1;
+                    }
+                    function ndg_stop() {
+                      document.getElementById('ndg_image').style.opacity = 0;
+                    }
+                    ndg_stop();
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a target="_blank" href="https://aljazbozic.github.io/neural_deformation_graphs">
+                    <papertitle>Neural Deformation Graphs for Globally-consistent Non-rigid Reconstruction</papertitle>
+                  </a>
+                  <br>
+
+                  <b>Aljaž Božič</b>, Pablo Palafox, Michael Zollhöfer, Justus Thies, Angela Dai, Matthias Nießner<br>
+                  <b>ArXiv 2020</b><br>
+
+                  <a target="_blank" href="https://arxiv.org/abs/2012.01451.pdf">paper</a> |
+                  <a target="_blank" href="https://www.youtube.com/watch?v=vyq36eFkdWo">video</a> |
+                  <a target="_blank" href="main_page/bibtex/bozic2021ndg.bib"
+                    type="text/html">bibtex</a>
+
+                  <p>
+                    We introduce Neural Deformation Graphs for globally-consistent deformation tracking and 3D
+                    reconstruction of non-rigid objects. Specifically, we implicitly model a deformation graph via a
+                    deep neural network and empose per-frame viewpoint consistency as well as inter-frame graph and
+                    surface consistency constraints in a self-supervised fashion.
+                  </p>
+
+                </td>
+              </tr>
+
               <tr onmouseout="nnrt_stop()" onmouseover="nnrt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -108,7 +158,7 @@
                   </a>
                   <br>
 
-                  <b>Aljaz Bozic*</b>, Pablo Palafox*, Michael Zollhöfer, Angela Dai, Justus Thies, Matthias Nießner<br>
+                  <b>Aljaž Božič*</b>, Pablo Palafox*, Michael Zollhöfer, Angela Dai, Justus Thies, Matthias Nießner<br>
                   <b>NeurIPS 2020</b><br>
 
                   <a target="_blank" href="https://arxiv.org/pdf/2006.13240.pdf">paper</a> |
@@ -155,7 +205,7 @@
                   </a>
                   <br>
 
-                  Yang Li, <b>Aljaz Bozic</b>, Tianwei Zhang, Yanli Ji, Tatsuya Harada, Matthias Nießner<br>
+                  Yang Li, <b>Aljaž Božič</b>, Tianwei Zhang, Yanli Ji, Tatsuya Harada, Matthias Nießner<br>
                   <b>CVPR 2020 (Oral)</b><br>
 
                   <a target="_blank" href="https://arxiv.org/pdf/2003.12230.pdf">paper</a> |
@@ -202,7 +252,7 @@
                   </a>
                   <br>
 
-                  <b>Aljaz Bozic</b>, Michael Zollhöfer, Christian Theobalt, Matthias Nießner<br>
+                  <b>Aljaž Božič</b>, Michael Zollhöfer, Christian Theobalt, Matthias Nießner<br>
                   <b>CVPR 2020</b><br>
 
                   <a target="_blank" href="https://arxiv.org/pdf/1912.04302.pdf">paper</a> |
@@ -238,13 +288,10 @@
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="main_page/images/teaching.png" width="160">
                 </td>
-                <td width="75%" valign="center" style="line-height:25px;">
+                <td width="75%" valign="center" style="line-height:30px;">
                   <a target="_blank"
                     href="https://justusthies.github.io/posts/3D-Scanning-and-Spatial-Learning-WS19-20/">Teaching
                     Assistant, Practical Course: 3D Scanning and Spatial Learning - Winter 2019/20</a>
-                  <br>
-                  <a target="_blank" href="https://justusthies.github.io/posts/3D-Vision-SS19/">Teaching
-                    Assistant, Seminar: 3D Vision Seminar - Summer 2019</a>
                   <br>
                   <a target="_blank" href="https://justusthies.github.io/posts/3D-Vision-SS19/">Teaching
                     Assistant, Seminar: 3D Vision Seminar - Summer 2019</a>
