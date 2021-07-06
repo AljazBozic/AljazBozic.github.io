@@ -29,16 +29,16 @@
                     <name>Aljaž Božič</name>
                   </p>
                   <p>
-                    I am a Ph.D. candidate at <a target="_blank"
+                    I am a Ph.D. candidate at <a
                       href="http://niessnerlab.org/members/matthias_niessner/profile.html">Matthias
-                      Nießner</a>'s <a target="_blank" target="_blank" href="http://niessnerlab.org/team.html">Visual
-                      Computing Group</a>, at the <a target="_blank" href="https://www.tum.de/">Technical University of
+                      Nießner</a>'s <a href="http://niessnerlab.org/team.html">Visual
+                      Computing Group</a>, at the <a href="https://www.tum.de/">Technical University of
                       Munich</a>.
                   </p>
                   <p>
-                    I received a Master's Degree in Computer Science from the <a target="_blank"
+                    I received a Master's Degree in Computer Science from the <a
                       href="https://www.tum.de/">Technical University of Munich</a> and a Bachelor's Degree in
-                    Mathematics from the <a target="_blank" href="https://www.uni-lj.si/eng/">University of
+                    Mathematics from the <a href="https://www.uni-lj.si/eng/">University of
                       Ljubljana</a>.
                   </p>
                   <p>
@@ -48,16 +48,16 @@
                     non-rigidly deforming objects in dynamic environments, with applications in VR/AR, robotics, etc.
                   </p>
                   <p style="text-align:center">
-                    <a target="_blank" href="mailto:aljaz.bozic@tum.de">Email</a> &nbsp|&nbsp
-                    <a target="_blank" href="https://scholar.google.com/citations?user=92YuESsAAAAJ&hl=en&oi=ao">Google
+                    <a href="mailto:aljaz.bozic@tum.de">Email</a> &nbsp|&nbsp
+                    <a href="https://scholar.google.com/citations?user=92YuESsAAAAJ&hl=en&oi=ao">Google
                       Scholar</a>
                     &nbsp|&nbsp
-                    <a target="_blank" href="https://twitter.com/BozicAljaz">Twitter</a> &nbsp|&nbsp
-                    <a target="_blank" href="https://github.com/AljazBozic">Github</a>
+                    <a href="https://twitter.com/BozicAljaz">Twitter</a> &nbsp|&nbsp
+                    <a href="https://github.com/AljazBozic">Github</a>
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a target="_blank" href="main_page/images/AljazBozic.jpg"><img style="width:100%;max-width:100%"
+                  <a href="main_page/images/AljazBozic.jpg"><img style="width:100%;max-width:100%"
                       alt="profile photo" src="main_page/images/AljazBozic_Circle.jpg" class="hoverZoomLink"></a>
                 </td>
               </tr>
@@ -79,18 +79,69 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; text-align: justify;">
             <tbody>
 
+
+              <tr onmouseout="transformerfusion_stop()" onmouseover="transformerfusion_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                    <a href="https://aljazbozic.github.io/transformerfusion">
+                        <div class="two" id="transformerfusion_image" style="opacity: 0;">
+                        <video width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="main_page/images/bozic2021transformerfusion.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </div>
+                        <img src="main_page/images/bozic2021transformerfusion_before.jpg" width="160">
+                    </a>
+                    </div>
+
+                    <script type="text/javascript">
+                    function transformerfusion_start() {
+                        document.getElementById('transformerfusion_image').style.opacity = 1;
+                    }
+                    function transformerfusion_stop() {
+                        document.getElementById('transformerfusion_image').style.opacity = 0;
+                    }
+                    transformerfusion_stop();
+                    </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="https://aljazbozic.github.io/transformerfusion">
+                  <papertitle>TransformerFusion: Monocular RGB Scene Reconstruction using Transformers</papertitle>
+                  </a>
+                  <br>
+
+                  <b>Aljaž Božič</b>, Pablo Palafox, Justus Thies, Angela Dai, Matthias Nießner<br>
+                  <b>ArXiv 2021</b><br>
+
+                  <a href="#">paper</a> |
+                  <a href="https://www.youtube.com/watch?v=LIpTKYfKSqw">video</a> |
+                  <a href="main_page/bibtex/bozic2021transformerfusion.bib" type="text/html">bibtex</a>
+
+                  <p>
+                  We introduce TransformerFusion, a transformer-based 3D scene reconstruction approach.
+                  The input monocular RGB video frames are fused into a volumetric feature representation  
+                  of the scene by a transformer network that learns to attend to the most relevant image 
+                  observations, resulting in an accurate online surface reconstruction.
+                  </p>
+
+                </td>
+              </tr>
+
+
               <tr onmouseout="npms_stop()" onmouseover="npms_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
                         <div class="two" id='npms_image'>
-                                <a target="_blank" href="https://pablopalafox.github.io/npms">
+                                <a href="https://pablopalafox.github.io/npms">
                                     <video width=100% height=100% muted autoplay loop>
                                         <source src="main_page/images/palafox2021npms.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </a>
                         </div>
-                        <a target="_blank" href="https://pablopalafox.github.io/npms">
+                        <a href="https://pablopalafox.github.io/npms">
                             <img src="main_page/images/palafox2021npms_before.jpg" width="160">
                         </a>
                         
@@ -110,7 +161,7 @@
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
 
-                  <a target="_blank" href="https://pablopalafox.github.io/npms">
+                  <a href="https://pablopalafox.github.io/npms">
                     <papertitle>NPMs: Neural Parametric Models for 3D Deformable Shapes</papertitle>
                   </a>
                   <br>
@@ -118,9 +169,9 @@
                   Pablo Palafox, <b>Aljaž Božič</b>, Justus Thies, Matthias Nießner, Angela Dai</i><br>
                   <b>ArXiv 2021</b><br>
 
-                  <a target="_blank" href="https://arxiv.org/abs/2104.00702.pdf">paper</a> |
-                  <a target="_blank" href="https://www.youtube.com/watch?v=muZXXgkkMPY">video</a> |
-                  <a target="_blank" href="main_page/bibtex/palafox2021npms.bib" type="text/html">bibtex</a>
+                  <a href="https://arxiv.org/abs/2104.00702.pdf">paper</a> |
+                  <a href="https://www.youtube.com/watch?v=muZXXgkkMPY">video</a> |
+                  <a href="main_page/bibtex/palafox2021npms.bib" type="text/html">bibtex</a>
 
                   <p>
                     We propose Neural Parametric Models (NPMs), a learned alternative to traditional, parametric 3D models. 
@@ -136,7 +187,7 @@
               <tr onmouseout="ndg_stop()" onmouseover="ndg_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <a target="_blank" href="https://aljazbozic.github.io/neural_deformation_graphs">
+                    <a href="https://aljazbozic.github.io/neural_deformation_graphs">
                       <div class="two" id="ndg_image" style="opacity: 0;">
                         <video width="100%" height="100%" muted="" autoplay="" loop="">
                           <source src="main_page/images/bozic2021ndg.mp4" type="video/mp4">
@@ -160,7 +211,7 @@
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
 
-                  <a target="_blank" href="https://aljazbozic.github.io/neural_deformation_graphs">
+                  <a href="https://aljazbozic.github.io/neural_deformation_graphs">
                     <papertitle>Neural Deformation Graphs for Globally-consistent Non-rigid Reconstruction</papertitle>
                   </a>
                   <br>
@@ -168,9 +219,9 @@
                   <b>Aljaž Božič</b>, Pablo Palafox, Michael Zollhöfer, Justus Thies, Angela Dai, Matthias Nießner<br>
                   <b>Conference on Computer Vision and Pattern Recognition (CVPR), 2021 (Oral)</b><br>
 
-                  <a target="_blank" href="https://arxiv.org/abs/2012.01451.pdf">paper</a> |
-                  <a target="_blank" href="https://www.youtube.com/watch?v=vyq36eFkdWo">video</a> |
-                  <a target="_blank" href="main_page/bibtex/bozic2021ndg.bib" type="text/html">bibtex</a>
+                  <a href="https://arxiv.org/abs/2012.01451.pdf">paper</a> |
+                  <a href="https://www.youtube.com/watch?v=vyq36eFkdWo">video</a> |
+                  <a href="main_page/bibtex/bozic2021ndg.bib" type="text/html">bibtex</a>
 
                   <p>
                     We introduce Neural Deformation Graphs for globally-consistent deformation tracking and 3D
@@ -185,7 +236,7 @@
               <tr onmouseout="nnrt_stop()" onmouseover="nnrt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <a target="_blank" href="http://niessnerlab.org/projects/bozic2020nnrt.html">
+                    <a href="http://niessnerlab.org/projects/bozic2020nnrt.html">
                       <div class="two" id="nnrt_image" style="opacity: 0;">
                         <img src="main_page/images/bozic2020nnrt.png" width="160">
                       </div>
@@ -206,7 +257,7 @@
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
 
-                  <a target="_blank" href="http://niessnerlab.org/projects/bozic2020nnrt.html">
+                  <a href="http://niessnerlab.org/projects/bozic2020nnrt.html">
                     <papertitle>Neural Non-Rigid Tracking</papertitle>
                   </a>
                   <br>
@@ -214,10 +265,10 @@
                   <b>Aljaž Božič*</b>, Pablo Palafox*, Michael Zollhöfer, Angela Dai, Justus Thies, Matthias Nießner<br>
                   <b>Proc. Neural Information Processing Systems (NeurIPS), 2020</b><br>
 
-                  <a target="_blank" href="https://arxiv.org/pdf/2006.13240.pdf">paper</a> |
-                  <a target="_blank" href="https://github.com/DeformableFriends/NeuralTracking">code</a> |
-                  <a target="_blank" href="https://www.youtube.com/watch?v=nqYaxM6Rj8I">video</a> |
-                  <a target="_blank" href="main_page/bibtex/bozic2020nnrt.bib" type="text/html">bibtex</a>
+                  <a href="https://arxiv.org/pdf/2006.13240.pdf">paper</a> |
+                  <a href="https://github.com/DeformableFriends/NeuralTracking">code</a> |
+                  <a href="https://www.youtube.com/watch?v=nqYaxM6Rj8I">video</a> |
+                  <a href="main_page/bibtex/bozic2020nnrt.bib" type="text/html">bibtex</a>
 
                   <p>
                     We introduce a novel, end-to-end learnable, differentiable non-rigid tracker that enables
@@ -232,7 +283,7 @@
               <tr onmouseout="optnrt_stop()" onmouseover="optnrt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <a target="_blank" href="http://niessnerlab.org/projects/li2020learning.html">
+                    <a href="http://niessnerlab.org/projects/li2020learning.html">
                       <div class="two" id="optnrt_image" style="opacity: 0;">
                         <img src="main_page/images/li2020optnrt.png" width="160">
                       </div>
@@ -253,7 +304,7 @@
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
 
-                  <a target="_blank" href="http://niessnerlab.org/projects/li2020learning.html">
+                  <a href="http://niessnerlab.org/projects/li2020learning.html">
                     <papertitle>Learning to Optimize Non-Rigid Tracking</papertitle>
                   </a>
                   <br>
@@ -261,9 +312,9 @@
                   Yang Li, <b>Aljaž Božič</b>, Tianwei Zhang, Yanli Ji, Tatsuya Harada, Matthias Nießner<br>
                   <b>Conference on Computer Vision and Pattern Recognition (CVPR), 2020 (Oral)</b><br>
 
-                  <a target="_blank" href="https://arxiv.org/pdf/2003.12230.pdf">paper</a> |
-                  <a target="_blank" href="https://www.youtube.com/watch?v=oFgMep7xzrU">video</a> |
-                  <a target="_blank" href="main_page/bibtex/li2020learning.bib" type="text/html">bibtex</a>
+                  <a href="https://arxiv.org/pdf/2003.12230.pdf">paper</a> |
+                  <a href="https://www.youtube.com/watch?v=oFgMep7xzrU">video</a> |
+                  <a href="main_page/bibtex/li2020learning.bib" type="text/html">bibtex</a>
 
                   <p>
                     We learn the tracking of non-rigid objects by differentiating through the underlying non-rigid
@@ -278,7 +329,7 @@
               <tr onmouseout="deepdeform_stop()" onmouseover="deepdeform_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <a target="_blank" href="http://niessnerlab.org/projects/bozic2020deepdeform.html">
+                    <a href="http://niessnerlab.org/projects/bozic2020deepdeform.html">
                       <div class="two" id="deepdeform_image" style="opacity: 0;">
                         <video width="100%" height="100%" muted="" autoplay="" loop="">
                           <source src="main_page/images/bozic2020deepdeform.mp4" type="video/mp4">
@@ -306,7 +357,7 @@
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
 
-                  <a target="_blank" href="http://niessnerlab.org/projects/bozic2020deepdeform.html">
+                  <a href="http://niessnerlab.org/projects/bozic2020deepdeform.html">
                     <papertitle>DeepDeform: Learning Non-rigid RGB-D Reconstruction with Semi-supervised Data
                     </papertitle>
                   </a>
@@ -315,10 +366,10 @@
                   <b>Aljaž Božič</b>, Michael Zollhöfer, Christian Theobalt, Matthias Nießner<br>
                   <b>Conference on Computer Vision and Pattern Recognition (CVPR), 2020</b><br>
 
-                  <a target="_blank" href="https://arxiv.org/pdf/1912.04302.pdf">paper</a> |
-                  <a target="_blank" href="https://github.com/AljazBozic/DeepDeform">dataset</a> |
-                  <a target="_blank" href="https://www.youtube.com/watch?v=OrHLacCDZVQ">video</a> |
-                  <a target="_blank" href="main_page/bibtex/bozic2020deepdeform.bib" type="text/html">bibtex</a>
+                  <a href="https://arxiv.org/pdf/1912.04302.pdf">paper</a> |
+                  <a href="https://github.com/AljazBozic/DeepDeform">dataset</a> |
+                  <a href="https://www.youtube.com/watch?v=OrHLacCDZVQ">video</a> |
+                  <a href="main_page/bibtex/bozic2020deepdeform.bib" type="text/html">bibtex</a>
 
                   <p>
                     We present a large dataset of 400 scenes, over 390,000 RGB-D frames, and 5,533 densely aligned frame
@@ -362,8 +413,8 @@
                   <b>Aljaž Božič*</b>, Nikolas Brasch*, Joe Lallemand, Federico Tombari<br>
                   <b>Int. Conference on Intelligent Robots and Systems (IROS), 2018</b><br>
 
-                  <a target="_blank" href="https://ieeexplore.ieee.org/document/8593828">paper</a> |
-                  <a target="_blank" href="main_page/bibtex/brasch2018semanticslam.bib" type="text/html">bibtex</a>
+                  <a href="https://ieeexplore.ieee.org/document/8593828">paper</a> |
+                  <a href="main_page/bibtex/brasch2018semanticslam.bib" type="text/html">bibtex</a>
 
                   <p>
                     We propose a semantic monocular SLAM framework designed to deal with highly dynamic environments,
@@ -408,8 +459,8 @@
                   Georg Kuschk, <b>Aljaž Božič</b>, Daniel Cremers<br>
                   <b>IEEE Intelligent Vehicles Symposium (IV), 2017</b><br>
 
-                  <a target="_blank" href="https://ieeexplore.ieee.org/document/7995899">paper</a> |
-                  <a target="_blank" href="main_page/bibtex/kuschk2017denseslam.bib" type="text/html">bibtex</a>
+                  <a href="https://ieeexplore.ieee.org/document/7995899">paper</a> |
+                  <a href="main_page/bibtex/kuschk2017denseslam.bib" type="text/html">bibtex</a>
 
                   <p>
                     We propose an algorithm for dense and direct large-scale visual SLAM that runs in real-time on a
@@ -441,22 +492,19 @@
                   <img src="main_page/images/teaching.png" width="160">
                 </td>
                 <td width="75%" valign="center" style="line-height:30px;">
-                  <a target="_blank"
-                    href="https://justusthies.github.io/posts/3D-Scanning-and-Spatial-Learning-WS19-20/">Teaching
+                  <a href="https://justusthies.github.io/posts/3D-Scanning-and-Spatial-Learning-WS19-20/">Teaching
                     Assistant, Practical Course: 3D Scanning and Spatial Learning - Winter 2019/20</a>
                   <br>
-                  <a target="_blank" href="https://justusthies.github.io/posts/3D-Vision-SS19/">Teaching
+                  <a href="https://justusthies.github.io/posts/3D-Vision-SS19/">Teaching
                     Assistant, Seminar: 3D Vision Seminar - Summer 2019</a>
                   <br>
-                  <a target="_blank" href="https://justusthies.github.io/posts/3D-Vision-WS18-19/">Teaching
+                  <a href="https://justusthies.github.io/posts/3D-Vision-WS18-19/">Teaching
                     Assistant, Seminar: 3D Vision Seminar - Winter 2018/19</a>
                   <br>
-                  <a target="_blank"
-                    href="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-SS18/">Teaching
+                  <a href="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-SS18/">Teaching
                     Assistant, Lecture: 3D Scanning & Motion Capture - Summer 2018</a>
                   <br>
-                  <a target="_blank"
-                    href="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS17-18/">Teaching
+                  <a href="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS17-18/">Teaching
                     Assistant, Lecture: 3D Scanning & Motion Capture - Winter 2017/18</a>
                 </td>
               </tr>
@@ -470,7 +518,7 @@
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:right;font-size:small;">
-                    Source code stolen from <a target="_blank" href="https://jonbarron.info/">Jon Barron</a>.
+                    Source code stolen from <a href="https://jonbarron.info/">Jon Barron</a>.
                   </p>
                 </td>
               </tr>

@@ -29,6 +29,46 @@
 
 <body>
 
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="margin:0px; padding:0px">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://aljazbozic.github.io/">
+                    <span class="icon">
+                    <i class="fas fa-home"></i>
+            </span>
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                    More Research
+                </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://aljazbozic.github.io/transformerfusion/">
+                            TransformerFusion
+                        </a>
+                        <a class="navbar-item" href="https://aljazbozic.github.io/neural_deformation_graphs/">
+                            Neural Deformation Graphs
+                        </a>
+                        <a class="navbar-item" href="https://www.3dunderstanding.org/papers/2020/bozic2020nnrt/">
+                            Neural Non-Rigid Tracking
+                        </a>
+                        <a class="navbar-item" href="https://niessnerlab.org/projects/bozic2020deepdeform.html">
+                            DeepDeform
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
     <div class="w3-container" id="paper" style="margin-top: 30px">
         <div class="w3-content" style="max-width:850px">
 
@@ -37,18 +77,18 @@
             </h1>
 
             <p id="authors" style="text-align: center; margin-top:20px">
-                <a target="_blank" href="https://aljazbozic.github.io/">Aljaž
+                <a href="https://aljazbozic.github.io/">Aljaž
                     Božič</a><sup>1</sup>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://pablorpalafox.github.io/">Pablo Palafox</a><sup>1</sup>
+                <a href="https://pablorpalafox.github.io/">Pablo Palafox</a><sup>1</sup>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://zollhoefer.com/">Michael Zollhöfer</a><sup>2</sup>
+                <a href="https://zollhoefer.com/">Michael Zollhöfer</a><sup>2</sup>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://justusthies.github.io/">Justus Thies</a><sup>1</sup>
+                <a href="https://justusthies.github.io/">Justus Thies</a><sup>1</sup>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://www.3dunderstanding.org/index.html">Angela Dai</a><sup>1</sup>
+                <a href="https://www.3dunderstanding.org/index.html">Angela Dai</a><sup>1</sup>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://www.niessnerlab.org/members/matthias_niessner/profile.html">Matthias
+                <a href="https://www.niessnerlab.org/members/matthias_niessner/profile.html">Matthias
                     Nie&szlig;ner</a><sup>1</sup>
                 &nbsp;&nbsp;&nbsp;&nbsp;
             </p>
@@ -63,7 +103,7 @@
             <div style="margin-top: 20px; margin-bottom: 20px; text-align: center">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                    <a target="_blank" href="bozic_2020_neural_deformation_graphs.pdf"
+                    <a href="bozic_2020_neural_deformation_graphs.pdf"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
@@ -78,7 +118,7 @@
                     </a>
                 </span>
                 <span class="link-block">
-                    <a target="_blank" href="https://arxiv.org/abs/2012.01451"
+                    <a href="https://arxiv.org/abs/2012.01451"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <i class="ai ai-arxiv"></i>
@@ -88,7 +128,7 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=vyq36eFkdWo"
+                    <a href="https://www.youtube.com/watch?v=vyq36eFkdWo"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false"
@@ -104,7 +144,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                    <a target="_blank" href="https://github.com/AljazBozic/NeuralGraph" class="external-link button is-normal is-rounded is-dark">
+                    <a href="https://github.com/AljazBozic/NeuralGraph" class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false"
                                 data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -232,11 +272,10 @@
 
 @article{bozic2021neuraldeformationgraphs,
     title={Neural Deformation Graphs for Globally-consistent Non-rigid Reconstruction},
-    author={Bo{\v{z}}i{\v{c}}, Alja{\v{z}} and Palafox, Pablo and Zollh{\"o}fer, Michael and Dai, Angela and Thies, Justus and Nie{\ss}ner, Matthias},
+    author={Bo{\v{z}}i{\v{c}}, Alja{\v{z}} and Palafox, Pablo and Zollh{\"o}fer, Michael and Thies, Justus and Dai, Angela and Nie{\ss}ner, Matthias},
     journal={CVPR},
     year={2021}
-}
-        
+}       
             </pre>
         </div>
 
