@@ -29,9 +29,12 @@
                     <name>Aljaž Božič</name>
                   </p>
                   <p>
-                    I am a Ph.D. candidate at <a
-                      href="http://niessnerlab.org/members/matthias_niessner/profile.html">Matthias
-                      Nießner</a>'s <a href="http://niessnerlab.org/team.html">Visual
+                    I am a Research Scientist at Meta Reality Labs Research.
+                  </p>
+                  <p>
+                    I did my Ph.D. with <a
+                      href="http://niessnerlab.org/members/matthias_niessner/profile.html">Prof. Matthias
+                      Nießner</a> at <a href="http://niessnerlab.org/team.html">Visual
                       Computing Group</a>, at the <a href="https://www.tum.de/">Technical University of
                       Munich</a>.
                   </p>
@@ -79,6 +82,59 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; text-align: justify;">
             <tbody>
 
+
+              <tr onmouseout="rcmvsnet_stop()" onmouseover="rcmvsnet_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                    <a href="https://boese0601.github.io/rc-mvsnet">
+                        <!-- <div class="two" id="rcmvsnet_image" style="opacity: 0;">
+                        <video width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        </div> -->
+                        <img src="main_page/images/chang2022rcmvsnet_before.jpg" width="160">
+                    </a>
+                    </div>
+
+                    <script type="text/javascript">
+                    function rcmvsnet_start() {
+                        // document.getElementById('rcmvsnet_image').style.opacity = 1;
+                    }
+                    function rcmvsnet_stop() {
+                        // document.getElementById('rcmvsnet_image').style.opacity = 0;
+                    }
+                    rcmvsnet_stop();
+                    </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="https://boese0601.github.io/rc-mvsnet">
+                  <papertitle>RC-MVSNet: Unsupervised Multi-View Stereo with Neural Rendering</papertitle>
+                  </a>
+                  <br>
+
+                  Di Chang, <b>Aljaž Božič</b>, T. Zhang, Q. Yan, Y. Chen, S. Süsstrunk, Matthias Nießner<br>
+
+                  <b>ECCV 2022</b><br>
+
+                  <a href="https://arxiv.org/abs/2203.03949">paper</a> |
+                  <a href="https://github.com/Boese0601/RC-MVSNet">code</a> |
+                  <a href="https://www.youtube.com/watch?v=I_Q47TxTLbs">video</a> |
+                  <a href="main_page/bibtex/chang2022rc.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    We introduce RC-MVSNet, an unsupervised multi-view stereo reconstruction approach
+                    that leverages NeRF-like rendering to generate consistent photometric supervision
+                    for non-Lambertian surfaces, and propose an improved Gaussian-Uniform sampling
+                    to overcome occlusion artifacts present in existing approaches.
+                  </p>
+
+                </td>
+              </tr>
+
+
               <tr onmouseout="transformerfusion_stop()" onmouseover="transformerfusion_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
@@ -115,13 +171,14 @@
                   <b>NeurIPS 2021</b><br>
 
                   <a href="https://arxiv.org/abs/2107.02191">paper</a> |
+                  <a href="https://github.com/AljazBozic/TransformerFusion">code</a> |
                   <a href="https://www.youtube.com/watch?v=LIpTKYfKSqw">video</a> |
                   <a href="main_page/bibtex/bozic2021transformerfusion.bib" type="text/html">bibtex</a>
 
                   <p>
                   We introduce TransformerFusion, a transformer-based 3D scene reconstruction approach.
-                  The input monocular RGB video frames are fused into a volumetric feature representation  
-                  of the scene by a transformer network that learns to attend to the most relevant image 
+                  The input monocular RGB video frames are fused into a volumetric feature representation
+                  of the scene by a transformer network that learns to attend to the most relevant image
                   observations, resulting in an accurate online surface reconstruction.
                   </p>
 
@@ -143,7 +200,7 @@
                         <a href="https://pablopalafox.github.io/npms">
                             <img src="main_page/images/palafox2021npms_before.jpg" width="160">
                         </a>
-                        
+
                     </div>
 
                     <script type="text/javascript">
@@ -169,13 +226,14 @@
                   <b>ICCV 2021</b><br>
 
                   <a href="https://arxiv.org/abs/2104.00702.pdf">paper</a> |
+                  <a href="https://github.com/pablopalafox/npms">code</a> |
                   <a href="https://www.youtube.com/watch?v=muZXXgkkMPY">video</a> |
                   <a href="main_page/bibtex/palafox2021npms.bib" type="text/html">bibtex</a>
 
                   <p>
-                    We propose Neural Parametric Models (NPMs), a learned alternative to traditional, parametric 3D models. 
-                    4D dynamics are disentangled into latent-space representations of shape and pose, leveraging the flexibility 
-                    of recent developments in learned implicit functions. Once learned, NPMs enable optimization over the learned 
+                    We propose Neural Parametric Models (NPMs), a learned alternative to traditional, parametric 3D models.
+                    4D dynamics are disentangled into latent-space representations of shape and pose, leveraging the flexibility
+                    of recent developments in learned implicit functions. Once learned, NPMs enable optimization over the learned
                     spaces to fit to new observations.
                   </p>
 
@@ -219,6 +277,7 @@
                   <b>CVPR 2021 (Oral)</b><br>
 
                   <a href="https://arxiv.org/abs/2012.01451.pdf">paper</a> |
+                  <a href="https://github.com/AljazBozic/NeuralGraph">code</a> |
                   <a href="https://www.youtube.com/watch?v=vyq36eFkdWo">video</a> |
                   <a href="main_page/bibtex/bozic2021ndg.bib" type="text/html">bibtex</a>
 
