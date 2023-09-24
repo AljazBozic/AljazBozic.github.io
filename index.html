@@ -81,30 +81,171 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; text-align: justify;">
             <tbody>
+               <!-- Learning Neural Duplex Radiance Fields for Real-Time View Synthesis -->
+               <tr onmouseout="ndrf_stop()" onmouseover="ndrf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a href="http://raywzy.com/NDRF/">
+                      <div class="two" id="ndrf_image" style="opacity: 0;">
+                        <img src="main_page/images/wan2023ndrf.png" width="160">
+                      </div>
+                      <img src="main_page/images/wan2023ndrf_before.png" width="160">
+                    </a>
+                  </div>
 
+                  <script type="text/javascript">
+                    function ndrf_start() {
+                      document.getElementById('ndrf_image').style.opacity = 1;
+                    }
+                    function ndrf_stop() {
+                      document.getElementById('ndrf_image').style.opacity = 0;
+                    }
+                    ndrf_stop();
+                  </script>
+                </td>
 
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="http://raywzy.com/NDRF/">
+                  <papertitle>Learning Neural Duplex Radiance Fields for Real-Time View Synthesis</papertitle>
+                  </a>
+                  <br>
+
+                  Ziyu Wan, Christian Richardt, <b>Aljaž Božič</b>, Chao Li, Vijay Rengarajan, Seonghyeon Nam, Xiaoyu Xiang, Tuotuo Li, Bo Zhu, Rakesh Ranjan, Jing Liao<br>
+
+                  <b>CVPR 2023</b><br>
+
+                  <a href="https://arxiv.org/abs/2304.10537">paper</a> |
+                  <a href="https://www.youtube.com/watch?v=0xtbTClz7r0">video</a> |
+                  <a href="main_page/bibtex/wan2023ndrf.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    We introduce a novel approach to distill and bake NeRFs into highly efficient mesh-based
+                    neural representations that are fully compatible with the massively parallel graphics
+                    rendering pipeline. We represent scenes as neural radiance features encoded on a two-layer duplex
+                    mesh, which effectively overcomes the inherent inaccuracies in 3D surface reconstruction.
+                  </p>
+
+                </td>
+              </tr>
+
+              <!-- Neural Lens Modeling -->
+              <tr onmouseout="neurolens_stop()" onmouseover="neurolens_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a href="https://neural-lens.github.io/">
+                      <div class="two" id="neurolens_image" style="opacity: 0;">
+                        <img src="main_page/images/xian2023neurolens.png" width="160">
+                      </div>
+                      <img src="main_page/images/xian2023neurolens_before.png" width="160">
+                    </a>
+                  </div>
+
+                  <script type="text/javascript">
+                    function neurolens_start() {
+                      document.getElementById('neurolens_image').style.opacity = 1;
+                    }
+                    function neurolens_stop() {
+                      document.getElementById('neurolens_image').style.opacity = 0;
+                    }
+                    neurolens_stop();
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="https://neural-lens.github.io/">
+                  <papertitle>Neural Lens Modeling</papertitle>
+                  </a>
+                  <br>
+
+                  Wenqi Xian, <b>Aljaž Božič</b>, Noah Snavely, Christoph Lassner<br>
+
+                  <b>CVPR 2023</b><br>
+
+                  <a href="https://arxiv.org/abs/2304.04848">paper</a> |
+                  <a href="main_page/bibtex/xian2023neurolens.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    We propose NeuroLens, a neural lens model for distortion and vignetting that can be
+                    used for point projection and ray casting and can be optimized through both operations.
+                    This means that it can (optionally) be used to perform pre-capture calibration using
+                    classical calibration targets, and can later be used to perform calibration or refinement
+                    during 3D reconstruction, e.g., while optimizing a radiance field.
+                  </p>
+
+                </td>
+              </tr>
+
+              <!-- Neural Assets: Volumetric Object Capture and Rendering for Interactive Environments -->
+              <tr onmouseout="neuralassets_stop()" onmouseover="neuralassets_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a href="#">
+                      <div class="two" id="neuralassets_image" style="opacity: 0;">
+                        <img src="main_page/images/bozic2022neuralassets.png" width="160">
+                      </div>
+                      <img src="main_page/images/bozic2022neuralassets_before.png" width="160">
+                    </a>
+                  </div>
+
+                  <script type="text/javascript">
+                    function neuralassets_start() {
+                      document.getElementById('neuralassets_image').style.opacity = 1;
+                    }
+                    function neuralassets_stop() {
+                      document.getElementById('neuralassets_image').style.opacity = 0;
+                    }
+                    neuralassets_stop();
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="#">
+                  <papertitle>Neural Assets: Volumetric Object Capture and Rendering for Interactive Environments</papertitle>
+                  </a>
+                  <br>
+
+                  <b>Aljaž Božič</b>, Denis Gladkov, Luke Doukakis, Christoph Lassner<br>
+
+                  <b>arXiv 2022</b><br>
+
+                  <a href="https://arxiv.org/abs/2212.06125">paper</a> |
+                  <a href="https://www.facebook.com/watch/?v=494508785917844">video</a> |
+                  <a href="main_page/bibtex/bozic2022neuralassets.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    We propose a novel neural representation for capturing real-world objects in everyday
+                    environments, featuring photorealistic appearance and volumetric effects, such as
+                    translucent object parts. Our real-time model architecture is transpiled into efficient
+                    shader code seamlessly integrated into a modern game engine, supporting object interactions,
+                    shadows, etc.
+                  </p>
+
+                </td>
+              </tr>
+
+              <!-- RC-MVSNet: Unsupervised Multi-View Stereo with Neural Rendering -->
               <tr onmouseout="rcmvsnet_stop()" onmouseover="rcmvsnet_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
-                    <a href="https://boese0601.github.io/rc-mvsnet">
-                        <!-- <div class="two" id="rcmvsnet_image" style="opacity: 0;">
-                        <video width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        </div> -->
+                      <a href="https://boese0601.github.io/rc-mvsnet">
+                        <div class="two" id="rcmvsnet_image" style="opacity: 0;">
+                          <img src="main_page/images/chang2022rcmvsnet.jpg" width="160">
+                        </div>
                         <img src="main_page/images/chang2022rcmvsnet_before.jpg" width="160">
-                    </a>
+                      </a>
                     </div>
 
                     <script type="text/javascript">
-                    function rcmvsnet_start() {
-                        // document.getElementById('rcmvsnet_image').style.opacity = 1;
-                    }
-                    function rcmvsnet_stop() {
-                        // document.getElementById('rcmvsnet_image').style.opacity = 0;
-                    }
-                    rcmvsnet_stop();
+                      function rcmvsnet_start() {
+                        document.getElementById('rcmvsnet_image').style.opacity = 1;
+                      }
+                      function rcmvsnet_stop() {
+                        document.getElementById('rcmvsnet_image').style.opacity = 0;
+                      }
+                      rcmvsnet_stop();
                     </script>
                 </td>
 
@@ -134,7 +275,7 @@
                 </td>
               </tr>
 
-
+              <!-- TransformerFusion: Monocular RGB Scene Reconstruction using Transformers -->
               <tr onmouseout="transformerfusion_stop()" onmouseover="transformerfusion_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
@@ -185,7 +326,7 @@
                 </td>
               </tr>
 
-
+              <!-- NPMs: Neural Parametric Models for 3D Deformable Shapes -->
               <tr onmouseout="npms_stop()" onmouseover="npms_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="one">
@@ -240,7 +381,7 @@
                 </td>
               </tr>
 
-
+              <!-- Neural Deformation Graphs for Globally-consistent Non-rigid Reconstruction -->
               <tr onmouseout="ndg_stop()" onmouseover="ndg_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -291,6 +432,7 @@
                 </td>
               </tr>
 
+              <!-- Neural Non-Rigid Tracking -->
               <tr onmouseout="nnrt_stop()" onmouseover="nnrt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -338,6 +480,7 @@
                 </td>
               </tr>
 
+              <!-- Learning to Optimize Non-Rigid Tracking -->
               <tr onmouseout="optnrt_stop()" onmouseover="optnrt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -384,6 +527,7 @@
                 </td>
               </tr>
 
+              <!-- DeepDeform: Learning Non-rigid RGB-D Reconstruction with Semi-supervised Data -->
               <tr onmouseout="deepdeform_stop()" onmouseover="deepdeform_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -439,6 +583,7 @@
                 </td>
               </tr>
 
+              <!-- Semantic Monocular SLAM for Highly Dynamic Environments -->
               <tr onmouseout="semanticslam_stop()" onmouseover="semanticslam_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -484,6 +629,7 @@
                 </td>
               </tr>
 
+              <!-- Real-time Variational Stereo Reconstruction with Applications to Large-Scale Dense SLAM -->
               <tr onmouseout="denseslam_stop()" onmouseover="denseslam_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
