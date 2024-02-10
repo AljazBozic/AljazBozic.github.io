@@ -45,10 +45,9 @@
                       Ljubljana</a>.
                   </p>
                   <p>
-                    I'm interested in computer vision, machine learning and optimization.
+                    I'm interested in computer vision, graphics and AI.
 
-                    My research is mostly focused on non-rigid 3D reconstruction, i.e. tracking and reconstructing
-                    non-rigidly deforming objects in dynamic environments, with applications in VR/AR, robotics, etc.
+                    My research is mostly focused on neural rendering and generative AI, especially when it comes to modelling 3D deformable objects, with applications in VR/AR, robotics, etc.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:aljaz.bozic@tum.de">Email</a> &nbsp|&nbsp
@@ -81,8 +80,153 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; text-align: justify;">
             <tbody>
-               <!-- Learning Neural Duplex Radiance Fields for Real-Time View Synthesis -->
-               <tr onmouseout="ndrf_stop()" onmouseover="ndrf_start()">
+              <!-- SceNeRFlow: Time-Consistent Reconstruction of General Dynamic Scenes -->
+              <tr onmouseout="scenerflow_stop()" onmouseover="scenerflow_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a href="https://vcai.mpi-inf.mpg.de/projects/scenerflow/">
+                      <div class="two" id="scenerflow_image" style="opacity: 0;">
+                        <img src="main_page/images/tretschk2024scenerflow.png" width="160">
+                      </div>
+                      <img src="main_page/images/tretschk2024scenerflow_before.png" width="160">
+                    </a>
+                  </div>
+
+                  <script type="text/javascript">
+                    function scenerflow_start() {
+                      document.getElementById('scenerflow_image').style.opacity = 1;
+                    }
+                    function scenerflow_stop() {
+                      document.getElementById('scenerflow_image').style.opacity = 0;
+                    }
+                    scenerflow_stop();
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="https://vcai.mpi-inf.mpg.de/projects/scenerflow/">
+                  <papertitle>SceNeRFlow: Time-Consistent Reconstruction of General Dynamic Scenes</papertitle>
+                  </a>
+                  <br>
+
+                  Edith Tretschk, Vladislav Golyanik, Michael Zollhöfer, <b>Aljaž Božič</b>, Christoph Lassner, Christian Theobalt<br>
+
+                  <b>3DV 2024</b><br>
+
+                  <a href="https://arxiv.org/abs/2308.08258">paper</a> |
+                  <a href="https://vcai.mpi-inf.mpg.de/projects/scenerflow/data/scenerflow.mp4">video</a> |
+                  <a href="main_page/bibtex/tretschk2024scenerflow.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    We propose SceNeRFlow to reconstruct a general, non-rigid scene in a time-consistent manner.
+                    Our dynamic-NeRF method takes multi-view RGB videos and background images from static cameras
+                    with known camera parameters as input. We use a backwards deformation model and can accurately model
+                    long studio-scale motions.
+                  </p>
+
+                </td>
+              </tr>
+
+              <!-- A Local Appearance Model for Volumetric Capture of Diverse Hairstyles -->
+              <tr onmouseout="lochamo_stop()" onmouseover="lochamo_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a href="https://ziyanw1.github.io/LocHaMo/">
+                      <div class="two" id="lochamo_image" style="opacity: 0;">
+                        <video width="160" height="160" muted="" autoplay="" loop="">
+                          <source src="main_page/images/wang2024lochamo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="main_page/images/wang2024lochamo_before.png" width="160">
+                    </a>
+                  </div>
+
+                  <script type="text/javascript">
+                    function lochamo_start() {
+                      document.getElementById('lochamo_image').style.opacity = 1;
+                    }
+                    function lochamo_stop() {
+                      document.getElementById('lochamo_image').style.opacity = 0;
+                    }
+                    lochamo_stop();
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="https://ziyanw1.github.io/LocHaMo/">
+                  <papertitle>A Local Appearance Model for Volumetric Capture of Diverse Hairstyles</papertitle>
+                  </a>
+                  <br>
+
+                  Ziyan Wang, Giljoo Nam, <b>Aljaž Božič</b>, Chen Cao, Jason Saragih, Michael Zollhöfer, Jessica Hodgins<br>
+
+                  <b>3DV 2024</b><br>
+
+                  <a href="https://arxiv.org/abs/2312.08679">paper</a> |
+                  <a href="main_page/bibtex/wang2024lochamo.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    We present a novel local appearance model that is capable of capturing the
+                    photorealistic appearance of diverse hairstyles in a volumetric way. Our method
+                    leverages the local similarity across different hairstyles and learns a universal
+                    hair appearance prior from multi-view captures of hundreds of people.
+                  </p>
+
+                </td>
+              </tr>
+
+              <!-- VR-NeRF: High-Fidelity Virtualized Walkable Spaces -->
+              <tr onmouseout="vrnerf_stop()" onmouseover="vrnerf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <a href="https://vr-nerf.github.io/">
+                      <div class="two" id="vrnerf_image" style="opacity: 0;">
+                        <img src="main_page/images/xu2023vrnerf.png" width="160">
+                      </div>
+                      <img src="main_page/images/xu2023vrnerf_before.png" width="160">
+                    </a>
+                  </div>
+
+                  <script type="text/javascript">
+                    function vrnerf_start() {
+                      document.getElementById('vrnerf_image').style.opacity = 1;
+                    }
+                    function vrnerf_stop() {
+                      document.getElementById('vrnerf_image').style.opacity = 0;
+                    }
+                    vrnerf_stop();
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+
+                  <a href="https://vr-nerf.github.io/">
+                  <papertitle>VR-NeRF: High-Fidelity Virtualized Walkable Spaces</papertitle>
+                  </a>
+                  <br>
+
+                  Linning Xu, Vasu Agrawal, William Laney, Tony Garcia, Aayush Bansal, Changil Kim, Samuel Rota Bulò, Lorenzo Porzi, Peter Kontschieder, <b>Aljaž Božič</b>, Dahua Lin, Michael Zollhöfer, Christian Richardt<br>
+
+                  <b>SIGGRAPH Asia 2023</b><br>
+
+                  <a href="https://arxiv.org/abs/2311.02542">paper</a> |
+                  <a href="https://www.youtube.com/watch?v=9Q8_FssFQP4">video</a> |
+                  <a href="main_page/bibtex/xu2023vrnerf.bib" type="text/html">bibtex</a>
+
+                  <p>
+                    VR-NeRF brings high-fidelity walkable spaces to real-time virtual reality.
+                    Our “Eyeful Tower” multi-camera rig captures spaces with high image resolution
+                    and dynamic range that approach the limits of the human visual system.
+                  </p>
+
+                </td>
+              </tr>
+
+              <!-- Learning Neural Duplex Radiance Fields for Real-Time View Synthesis -->
+              <tr onmouseout="ndrf_stop()" onmouseover="ndrf_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <a href="http://raywzy.com/NDRF/">
